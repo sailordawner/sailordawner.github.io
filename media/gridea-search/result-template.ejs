@@ -1,0 +1,17 @@
+<div class="container">
+<div class="tag animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">搜索结果</div>
+<div class="other">
+  <% posts.forEach(function(post) { %>
+         <article class="other-list archivesa animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
+            <a href="<%= post.link %>">
+                <div class="other-list-zuo">
+                    <div class="archives-time"><%= post.dateFormat %></div>
+                </div>
+                <div class="other-list-you">
+                    <div class="archives-time"><%= post.title %></div>
+                </div>
+            </a>
+            </article>
+ <% }); %>
+ </div>
+</div>

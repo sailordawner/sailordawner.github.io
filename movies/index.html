@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="referrer" content="never"/>
      <meta charset="UTF-8" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-<title>BFM</title>
+<title>影单 | BFM</title>
 <link href="https://sailordawner.github.io//styles/main.css" type="text/css" rel="stylesheet" />
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_1423691_mvdbcdebqf.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.4.0/dist/Bmdb.min.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.4.0/dist/Bmdb.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -46,8 +49,22 @@
   
 </header>
         <div>
-            
+            <article>
+                       
+   <div class="post_content"></div>
+    </article>
+<script>new Bmdb({
+    type: 'movies',
+    selector: '.post_content',
+    secret: '',
+    noMoreText: '我只看了这么多',
+    limit: 30,
+    cache: true
+})
+</script>
+            </article>
           
+          </div>
         </div>
     </div>
     <footer class="footer">
