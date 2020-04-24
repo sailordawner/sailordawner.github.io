@@ -1,117 +1,75 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-<title>文章归档 | 文字仓库</title>
-<link href="https://sailordawner.github.io//styles/main.css" type="text/css" rel="stylesheet" />
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_1423691_mvdbcdebqf.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>文字仓库</title>
+<link rel="shortcut icon" href="https://sailordawner.github.io//favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://sailordawner.github.io//media/css/tailwind.css">
+<link rel="stylesheet" href="https://sailordawner.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="文字仓库 - Atom Feed" href="https://sailordawner.github.io//atom.xml">
+
+    
+
+  <meta name="description" content="精神食粮自留地" />
 </head>
 <body>
-    <div class="main">
-        <header id="header">
-    <div class="header-basic">
-    <div class="header-title"><a href="https://sailordawner.github.io/">文字仓库</a></div>
-    <div class="header-description">精神食粮自留地</div>
-    </div>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-    <div class="navigation">
-        <div class="navigation-frame">
-            
-            <li><a href="/">首页</a></li>
-            
-            <li><a href="/archives">归档</a></li>
-            
-            <li><a href="/tags">标签</a></li>
-            
-            <li><a href="/post/about">关于</a></li>
-            
-        </div>
-            <label class="navigation-phone" for="menu-checkbox"><i class="iconfont icoon icon-ego-caidan"></i></label>
-           <input id="menu-checkbox" type="checkbox" name="" value="">
-           <ul class="meun-list">
-            
-                <li><a href="/">首页</a></li>
-                
-                <li><a href="/archives">归档</a></li>
-                
-                <li><a href="/tags">标签</a></li>
-                
-                <li><a href="/post/about">关于</a></li>
-                
-           </ul>
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+    <a href="https://sailordawner.github.io//atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <div class="py-8 shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+          <div class="px-8 pb-5 flex relative overflow-hidden">
+            
+            <div class="flex-1">
+              <a href="https://sailordawner.github.io/post/hello-gridea/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+                Hello Gridea
+              </a>
+            </div>
+          </div>
+        
+      </div>
+
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
   
-</header>
-        <div>
-            <article class="archives">
-                
-                
-                <div class="archives-year">2020</div>
-
-                <div class="archives-frame">
-                                
-                    
-                <div class="archives-list">
-                    <a href="https://sailordawner.github.io/post/jia-ting-jiao-yu/" class="archives-title">家庭教育</a>
-                    <span class="archives-time">04.23</span>
-                </div>
-                                
-                
-                    
-                
-                </div>
-
-                
-                <div class="archives-year">2018</div>
-
-                <div class="archives-frame">
-                                
-                    
-                
-                    
-                <div class="archives-list">
-                    <a href="https://sailordawner.github.io/post/hello-gridea/" class="archives-title">Hello Gridea</a>
-                    <span class="archives-time">12.12</span>
-                </div>
-                                
-                
-                </div>
-
-                
-            </article>
-
-          
-        </div>
+</footer>
     </div>
-    <footer class="footer">
-    <div class="fooer-link">
-     
-             
-              <li><a href="https://twitter.com/DawnWooow" target="_blank"><i class="iconfont icon-twitter"></i></a></li>
-              
-              
-             
-              <li><a href="https://weibo.com/5609166080/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank"><i class="iconfont icon-weibo"></i></a></li>
-              
-              
-             
-              
-             
-              
-             
-              
-             
-              
-             
-              
-             
-              
-    </div>
-    <div class="information"></div>
-    <div class="pretend">重拾写作快乐</div>
-    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://sailordawner.github.io//media/scripts/main.js"></script>
 </body>
 </html>
