@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sailordawner.github.io/</id>
     <title>文字仓库</title>
-    <updated>2020-04-24T10:08:18.100Z</updated>
+    <updated>2020-04-24T11:06:34.283Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sailordawner.github.io/"/>
     <link rel="self" href="https://sailordawner.github.io/atom.xml"/>
-    <subtitle>精神食粮自留地</subtitle>
+    <subtitle>Dawn  Explorer</subtitle>
     <logo>https://sailordawner.github.io/images/avatar.png</logo>
     <icon>https://sailordawner.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 文字仓库</rights>
